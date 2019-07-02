@@ -59,7 +59,7 @@ goto boot_memdisk
 
 :gparted
 set gparted_version 1.0.0-3
-set util_path sourceforge.net/projects/gparted/files/gparted-live-stable/1.0.0-3/gparted-live-${gparted_version}-amd64.iso/download?use_mirror=datapacket#
+set util_path netix.dl.sourceforge.net/project/gparted/gparted-live-stable/${gparted_version}/gparted-live-${gparted_version}-i686.iso
 set util_file gparted-live-${gparted_version}-amd64.iso
 goto boot_memdisk
 
