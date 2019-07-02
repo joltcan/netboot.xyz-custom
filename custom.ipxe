@@ -3,7 +3,7 @@
 menu Utilities - Image Sig Checks: [${img_sigs_enabled}]
 item --gap Utilities:
 item alt_linux_rescue ${space} ALT Linux Rescue
-item avg ${space} AVG Rescue CD
+item debian ${space} Debian Live XFCE
 item breakin ${space} Breakin
 item clonezilla ${space} Clonezilla
 item dban ${space} DBAN
@@ -33,10 +33,10 @@ set util_path nightly.altlinux.org/p8/release/alt-p8-rescue-20180312-x86_64.iso
 set util_file alt-p8-rescue-20180312-x86_64.iso
 goto boot_memdisk
 
-:avg
-set avg_version 160420a12074
-set util_path download.avg.com/filedir/inst/avg_arl_cdi_all_120_${avg_version}.iso
-set util_file avg_arl_cdi_all_120_${avg_version}.iso
+:debian
+set debian_version 9.9.0
+set util_path https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-${debian_version}-amd64-xfce.iso
+set util_file debian-live-${debian_version}-amd64-xfce.iso
 goto boot_memdisk
 
 :breakin
@@ -59,7 +59,7 @@ goto boot_memdisk
 
 :gparted
 set gparted_version 1.0.0-3
-set util_path netix.dl.sourceforge.net/project/gparted/gparted-live-stable/${gparted_version}/gparted-live-${gparted_version}-i686.iso
+set util_path netix.dl.sourceforge.net/project/gparted/gparted-live-stable/${gparted_version}/gparted-live-${gparted_version}-amd64.iso
 set util_file gparted-live-${gparted_version}-amd64.iso
 goto boot_memdisk
 
